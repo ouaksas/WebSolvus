@@ -8,23 +8,30 @@ body {
 .header-content {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     padding: 10px;
     background-color: #ffffff;
     border-bottom: 2px solid #0044ff; /* Blue border */
 }
+
 .logo {
-    width: 130px;
+    width: 100px;
     height: auto;
 }
 
-/* Rest of your existing styles */
+.conditional-tag {
+    background-color: #ffeeba;
+    padding: 10px;
+    text-align: center;
+    color: #c28f00;
+}
+
 .main-container {
     display: flex;
     width: 100%;
 }
-.video-container,
-.pdf-viewer-container {
+
+.video-container {
     width: 50%;
     box-sizing: border-box;
     padding: 20px;
@@ -34,7 +41,14 @@ body {
     width: 100%;
     height: auto;
     outline: none;
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 15px; /* Rounded corners */
+ 
+}
+
+.pdf-viewer-container {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .pdf-viewer {
@@ -42,7 +56,7 @@ body {
 }
 
 .video-description {
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
 }
 
@@ -50,11 +64,14 @@ body {
     color: #000000; /* Black */
     font-size: 24px;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 #videoDescription {
     color: #000000; /* Black */
     font-size: 16px;
+    text-align: left;
+
 }
 
 .video-controls {
@@ -76,7 +93,11 @@ button {
 button:hover {
     background-color: #cc0000; /* Darker Red */
 }
+
 .copyright {
+    margin-top: 10px;
     text-align: center;
-    padding-top: 20px;
-  }
+    padding: 1px;
+    background-color: #0044ff; /* Blue */
+    color: #FFFFFF; /* White */
+}
