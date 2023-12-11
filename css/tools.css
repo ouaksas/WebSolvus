@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #007bff; /* Set the background color to blue */
+    color: #fff; /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.coming-soon-container {
+    text-align: center;
+}
+
+h1 {
+    color: #fff; /* Set heading text color to white */
+}
+
+p {
+    margin: 10px 0;
+}
+
+.countdown {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line on smaller screens */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add some spacing from the text */
+}
+
+.countdown p {
+    font-size: 2em;
+    margin: 0 5px;
+}
+
+.countdown span {
+    font-size: 1.2em;
+    margin: 0 5px;
+}
+
+/* Style the countdown numbers */
+#days, #hours, #minutes, #seconds {
+    background-color: #67baf1; /* Set background color for countdown numbers */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px; /* Add margin between countdown items */
+}
+
+/* Style the countdown labels (days, hours, minutes, seconds) */
+.countdown span {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+/* Add animation to the countdown numbers */
+@keyframes countdownAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#days, #hours, #minutes, #seconds {
+    animation: countdownAnimation 1s infinite alternate;
+}
+
+/* Responsive styles using media queries */
+@media screen and (max-width: 600px) {
+    .countdown p, .countdown span {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+}
