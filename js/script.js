@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
             "path_video": "videos/formation2.mp4",
             "path_pdf": "pdf/pdf2.pdf"
         },
-        // Add more video entries to the playlist as needed
     ];
 
     let currentVideoIndex = 0;
@@ -69,4 +68,6 @@ function togglePdfViewer() {
         videoContainer.style.width = '50%';
         // videoContainer.style.margin = 'auto';
     }
+    
 }
+

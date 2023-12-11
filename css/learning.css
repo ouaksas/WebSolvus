@@ -8,25 +8,44 @@ body {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-around; */
     padding: 10px;
     background-color: #ffffff;
-    border-bottom: 2px solid #0044ff; /* Blue border */
+    border-bottom: 2px solid #007bff; /* Blue border */
+}
+
+.websolvus-class {
+  text-align: center;
+  font-size: 20px;
+  margin-left: 10px;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .logo {
-    width: 100px;
+    width: 120px;
     height: auto;
 }
 
-.conditional-tag {
-    background-color: #ffeeba;
-    padding: 10px;
-    text-align: center;
-    color: #c28f00;
+
+.site-container {
+    position: relative;
 }
 
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff; /* Adjust the background color as needed */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
+    z-index: 1000; /* Ensure the header is on top of other elements */
+}
+
+
 .main-container {
+    margin-top: 80px; /* Adjust this margin to accommodate the fixed header height */
+
     display: flex;
     width: 100%;
 }
@@ -58,11 +77,12 @@ body {
 .video-description {
     text-align: left;
     margin-top: 20px;
+    margin-left: 10px;
 }
 
 #videoTitle {
     color: #000000; /* Black */
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
     text-align: left;
 }
@@ -93,11 +113,23 @@ button {
 button:hover {
     background-color: #cc0000; /* Darker Red */
 }
-
+.conditional-tag {
+    background-color: #ffeeba;
+    padding: 1px;
+    text-align: center;
+    color: #c28f00;
+}
 .copyright {
-    margin-top: 10px;
+    margin-top: 1;
     text-align: center;
     padding: 1px;
     background-color: #0044ff; /* Blue */
     color: #FFFFFF; /* White */
+}
+#togglePdfBtn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/learning.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PTVA59z3JKFtu6I5U1D5K9Or5tX1v/PNGD5d93NEmzI5S+" crossorigin="anonymous">
 
     <script>
         document.addEventListener('contextmenu', event => {
@@ -15,11 +16,13 @@
     <title>WebSolvus Class</title>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="img/websolvus_logo.png" alt="WebSolvus Logo" class="logo">
-        </div>
-    </header>
+    <div class="site-container">
+        <header class="fixed-header">
+            <div class="header-content">
+                <img src="img/websolvus_logo.png" alt="WebSolvus Logo" class="logo">
+                <!-- <h1 class="websolvus-class">Class</h1> -->
+            </div>
+        </header>
    
     <div class="main-container">
         <div class="video-container" id="videoContainer">
@@ -40,7 +43,7 @@
     </div>
 
     <div class="video-controls">
-        <button id="togglePdfBtn" onclick="togglePdfViewer()">Toggle PDF Viewer</button>
+        <button id="togglePdfBtn" onclick="togglePdfViewer()">PDF </button>
 
         <button id="prevBtn">Previous</button>
         <button id="nextBtn">Next</button>
@@ -52,5 +55,6 @@
         &copy; Copyright <strong>WebSolvus</strong>. All Rights Reserved
     </div>
     <script src="js/script.js"></script>
+    </div>  
 </body>
 </html>
