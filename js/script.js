@@ -63,10 +63,10 @@ function togglePdfViewer() {
     if (pdfViewer.style.display === 'none' || pdfViewer.style.display === '') {
         pdfViewer.style.display = 'block';
         videoContainer.style.width = '50%';
-        videoContainer.style.margin = '20px';
+        // videoContainer.style.margin = '20px';
     } else {
         pdfViewer.style.display = 'none';
-        videoContainer.style.width = '100%';
-        videoContainer.style.margin = 'auto';
+        videoContainer.style.width = '50%';
+        // videoContainer.style.margin = 'auto';
     }
 }

@@ -18,40 +18,36 @@
     <header>
         <div class="header-content">
             <img src="img/websolvus_logo.png" alt="WebSolvus Logo" class="logo">
-            <!-- <h1>Welcome to WebSolvus Class</h1> -->
         </div>
     </header>
-    <div class="conditional-tag" style="background-color: #ffeeba; padding: 10px; text-align: center; color: #c28f00;">
-        <p><strong>Attention:</strong> This class of WebSolvus is reserved for the WebSolvus team and should not be shared anywhere without the permission of WebSolvus.</p>
-    </div>
+   
     <div class="main-container">
         <div class="video-container" id="videoContainer">
             <video controls id="videoPlayer">
                 Your browser does not support the video tag.
             </video>
+            <div class="video-description">
+                <h2 id="videoTitle"></h2>
+                <p id="videoDescription"></p>
+            </div>
         </div>
 
         <div class="pdf-viewer-container">
-            <button id="togglePdfBtn" onclick="togglePdfViewer()">Toggle PDF Viewer</button>
             <div id="pdfViewer" class="pdf-viewer">
-                <iframe id="pdfViewerIframe" width="100%" height="600px" frameborder="0"></iframe>
+                <iframe id="pdfViewerIframe" width="100%" height="400px" frameborder="1"></iframe>
             </div>
         </div>
     </div>
 
-    <div class="video-description">
-        <h2 id="videoTitle"></h2>
-        <p id="videoDescription"></p>
-    </div>
-
     <div class="video-controls">
+        <button id="togglePdfBtn" onclick="togglePdfViewer()">Toggle PDF Viewer</button>
+
         <button id="prevBtn">Previous</button>
         <button id="nextBtn">Next</button>
     </div>
-
-  
-
-    
+    <div class="conditional-tag">
+        <p><strong>Attention:</strong> This class of WebSolvus is reserved for the WebSolvus team and should not be shared anywhere without the permission of WebSolvus.</p>
+    </div>
     <div class="copyright">
         &copy; Copyright <strong>WebSolvus</strong>. All Rights Reserved
     </div>
