@@ -10,60 +10,50 @@
 <body>
     <div class="coming-soon-container">
         <img src="img/easier-1.png" alt="Easier Logo" class="easier-logo"> <!-- Added image here -->
-        <h1>Coming Soon</h1>
-        <p>We are working hard to bring you something amazing that will make your life of developing easier. Stay tuned!</p>
-        <p>"Easier" is our open-source product from Websolvus designed to simplify the programming experience and make development more accessible.</p>
+        <h1>Get Ready to LOL!</h1>
+        <p>We're brewing up something wild that'll make coding feel like a comedy show. Stay tuned for the hilarity!</p>
+        <p><strong>Easier</strong> is our open-source product from Websolvus designed to add a dash of fun to your coding journey.</p>
         <div class="countdown">
             <p id="days">00</p>
-            <span>days</span>
+            <span>laughs</span>
             <p id="hours">00</p>
-            <span>hours</span>
+            <span>giggles</span>
             <p id="minutes">00</p>
-            <span>minutes</span>
+            <span>chuckles</span>
             <p id="seconds">00</p>
-            <span>seconds</span>
+            <span>snickers</span>
         </div>
     </div>
 
     <script>
-        // Function to set or get the countdown end date from localStorage
         function setCountdownEndDate() {
             var countDownDate = localStorage.getItem("countDownDate");
             if (!countDownDate) {
-                // Set the date we're counting down to (Jan 1, 2024 00:00:00)
                 countDownDate = new Date("Jan 1, 2024 00:00:00").getTime();
                 localStorage.setItem("countDownDate", countDownDate);
             }
             return parseInt(countDownDate);
         }
 
-        // Update the countdown every 1 second
         var x = setInterval(function() {
-            // Get the current date and time
             var now = new Date().getTime();
 
-            // Get the countdown end date from localStorage
             var countDownDate = setCountdownEndDate();
 
-            // Calculate the remaining time
             var distance = countDownDate - now;
 
-            // Calculate days, hours, minutes, and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            var laughs = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var giggles = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var chuckles = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var snickers = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("days").innerHTML = laughs;
+            document.getElementById("hours").innerHTML = giggles;
+            document.getElementById("minutes").innerHTML = chuckles;
+            document.getElementById("seconds").innerHTML = snickers;
 
-            // Display the countdown
-            document.getElementById("days").innerHTML = days;
-            document.getElementById("hours").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("seconds").innerHTML = seconds;
-
-            // If the countdown is over, display a message
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("countdown").innerHTML = "EXPIRED";
+                document.getElementById("countdown").innerHTML = "TIME TO ROFL!";
             }
         }, 1000);
     </script>
