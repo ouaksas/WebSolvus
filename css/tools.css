@@ -79,8 +79,8 @@ p {
 }
 
 .easier-logo {
-    width: 20%; /* Ensure the image doesn't exceed its original size */
+    width: 20%; 
     display: block;
-    margin: 0 auto; /* Center the image */
-    margin-bottom: 20px; /* Add some space below the image */
+    margin: 0 auto; 
+    margin-bottom: 20px; 
 }
