@@ -1411,3 +1411,21 @@ h6 {
     padding: 100px 0 20px 0;
   }
 }
+
+/* Add your styles for the learning page */
+
+/*  */
+
+.video-container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+video {
+  width: 100%;
+}
+
+.video-description {
+  max-width: 800px;
+  margin: 20px auto;
+}

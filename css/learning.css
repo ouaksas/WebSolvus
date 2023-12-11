@@ -1,0 +1,57 @@
+/* learning.css */
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #adabab; /* Light Grey */
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #000; /* Black */
+}
+
+#videoPlayer {
+    width: 100%;
+    height: auto;
+    outline: none;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.video-description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#videoTitle {
+    color: #000000; /* Black */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#videoDescription {
+    color: #000000; /* Black */
+    font-size: 16px;
+}
+
+.video-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #0044ff; /* Blue */
+    color: #FFFFFF; /* White */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #cc0000; /* Darker Red */
+}
