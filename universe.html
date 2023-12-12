@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universe Language</title>
     <link href="css/universe.css" rel="stylesheet">
     <link href="img/universe.png" rel="icon">
-
 </head>
+
 <body>
-  
+
     <div class="site-container">
 
-    <header class="fixed-header">
-        <div class="header-content">
-            <img src="img/websolvus_logo.png" alt="WebSolvus Logo" class="logo">
-        </div>
-    </header>
+        <header class="fixed-header">
+            <div class="header-content">
+                <img src="img/websolvus_logo.png" alt="WebSolvus Logo" class="logo">
+            </div>
+        </header>
 
-    <section>
-        <h2>Language Snippet 1</h2>
-        <pre><code>
+        <section class="language-description">
+            <div class="logo-and-description">
+                <div class="logo-container">
+                    <img src="img/universe.png" alt="Universe Logo" class="language-logo">
+                </div>
+                <div class="description-container">
+                    <h1>Universe Language</h1>
+                    <p>The Universe Language is a dynamically evolving programming language designed with love in the internal cooking room of WebSolvus engineers. Currently under development and testing, the first release will be available very soon for the public.</p>
+                </div>
+                <button class="download-btn" onclick="showToast()">Download Universe Environment</button>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Language Snippet 1</h2>
+            <pre><code>
 PROGRAM Part10 { }
 var x, y : integer;
 var s    : real;
 var c    : string;
 var f    : boolean;
-        </code></pre>
-    </section>
+            </code></pre>
+        </section>
 
-    <section>
-        <h2>Language Snippet 2</h2>
-        <pre><code>
+        <section>
+            <h2>Language Snippet 2</h2>
+            <pre><code>
 ALGORITHM example {
     var x: integer;
     SHOW(TRUE and FALSE);
@@ -46,14 +61,41 @@ ALGORITHM example {
     }  
     foo("ss");
 }
-        </code></pre>
-    </section>
-    <div class="conditional-tag">
-        <p><strong>Attention:</strong> The Universe Language is crafted with love in the internal cooking room of WebSolvus engineers. Please note that the language is currently under development and testing. The first release will be available very soon for the public.</p>
+            </code></pre>
+        </section>
+
+        <!-- Additional Language Snippets -->
+
+        <section>
+            <h2>Variable Declaration and Assignment</h2>
+            <pre><code>
+var a1   : integer = 5;
+var c, s : string = "same values";
+var x    : real = 1.5;
+var flag : boolean = true;
+            </code></pre>
+        </section>
+
+        <div class="conditional-tag">
+            <p><strong>Attention:</strong> The Universe Language is still under testing and development. It is a work in progress by the WebSolvus team.</p>
+        </div>
+
+   <!-- Toast Message -->
+   <div class="toast-message" id="toast">Still under testing. Very soon you will get it.</div>
+
+        <div class="copyright">
+            &copy; Copyright <strong>WebSolvus</strong>. All Rights Reserved
+        </div>
     </div>
-    <div class="copyright">
-        &copy; Copyright <strong>WebSolvus</strong>. All Rights Reserved
-    </div>
-    </div>
+    <script>
+        function showToast() {
+            var toast = document.getElementById("toast");
+            toast.style.visibility = "visible";
+            setTimeout(function () {
+                toast.style.visibility = "hidden";
+            }, 3000); // Hide toast after 3 seconds
+        }
+    </script>
 </body>
+
 </html>
