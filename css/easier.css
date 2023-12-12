@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    color: #0066cc;
+  }
+
+  code {
+    background-color: #f4f4f4;
+    padding: 2px 5px;
+    border: 1px solid #ddd;
+  }
+
+  pre {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+
+  .command-example {
+    margin-bottom: 15px;
+  }
+
+  .logo {
+    width: 20%; 
+    display: block;
+    margin: 0 auto; 
+    margin-bottom: 20px; 
+    align-self: auto;
+  }
+  .logo2 {
+    width: 120px;
+    height: auto;
+  }
+
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #007bff; /* Blue border */
+}

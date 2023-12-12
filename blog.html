@@ -14,11 +14,14 @@
     }
 
     header {
-      background-color: #0074cc; /* Dark Blue */
-      color: #ffffff;
-      text-align: center;
-      padding: 1em 0;
+      display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #007bff; /* Blue border */
     }
+
 
     h1 {
       margin: 0;
@@ -38,7 +41,7 @@
     }
 
     footer {
-      background-color: #0074cc; /* Dark Blue */
+      background-color: #007bff; /* Dark Blue */
       color: #ffffff;
       text-align: center;
       padding: 1em 0;
@@ -46,12 +49,18 @@
       bottom: 0;
       width: 100%;
     }
+    .logo {
+    width: 120px;
+    height: auto;
+}
   </style>
 </head>
 
 <body>
   <header>
-    <h1>WebSolvus Blog</h1>
+    <!-- <h1>WebSolvus Blog</h1> -->
+    <img src="img/websolvus_logo.png" alt="WebSolvus Logo" class="logo">
+
   </header>
 
   <section>
