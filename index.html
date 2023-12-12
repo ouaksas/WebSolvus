@@ -49,6 +49,24 @@
         <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
         <a href="#intro" class="scrollto"><img src="img/websolvus_logo.png" height="51px" width="120px" alt="" class="img-fluid"></a>
       </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Get the current date and time
+          var currentDate = new Date();
+          
+          // Set the target date and time (December 31, 2023, 23:59:00)
+          var targetDate = new Date('December 31, 2023 23:59:00');
+          
+          // Check if the current date is equal to or after the target date
+          if (currentDate >= targetDate) {
+            // Change the href attribute of the specified link
+            var linkToChange = document.querySelector('a[href="tools.html"]');
+            if (linkToChange) {
+              linkToChange.href = 'easier.html';
+            }
+          }
+        });
+      </script>
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
