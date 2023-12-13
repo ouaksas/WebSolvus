@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easier IDE</title>
+    <link href="css/ide.css" rel="stylesheet">
+    <link href="img/easier-1.png" rel="icon">
+    <style>
+        /* Add your custom styles here */
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .download-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="site-container">
+
+        <header class="fixed-header">
+            <div class="header-content">
+                <img src="img/websolvus_logo.png" alt="WebSolvus Logo" class="logo">
+            </div>
+        </header>
+        
+        <!-- IDE Description -->
+        <section class="ide-description">
+            <h1>Welcome to Easier IDE</h1>
+            <p>Easier IDE is a revolutionary text editor crafted to meet the evolving needs of developers. Unlike traditional IDEs, it goes beyond the conventional debugging experience by integrating cutting-edge machine learning capabilities.</p>
+            
+            <p>Developed with a primary focus on facilitating chat-like interactions during coding, Easier IDE is designed to provide intelligent suggestions, offer debugging assistance, and enhance the overall coding experience. It sets itself apart by bringing the power of machine learning, akin to ChatGPT and its alternatives, directly into the coding environment.</p>
+            
+            <p>Key Features:</p>
+            <ul>
+                <li>Integrated Machine Learning: Leverage advanced machine learning models to receive real-time code suggestions and debugging assistance.</li>
+                <li>Chat-Like Interaction: Engage in a chat-like coding experience, receiving helpful tips and guidance as you write code.</li>
+                <li>Intuitive Interface: Enjoy a user-friendly interface that streamlines the coding process and promotes a seamless development experience.</li>
+                <li>Smart Code Completion: Experience intelligent code completion that understands context and provides relevant suggestions.</li>
+            </ul>
+            <!-- Download Button -->
+            <div class="download-section">
+                <p>Ready to experience the future of coding?</p>
+                <a class="download-button" href="https://github.com/HAFDIAHMED/Easier-IDE/raw/main/dist/ide.exe" download>
+                    Download Easier IDE
+                </a>
+            </div>
+        </section>
+
+
+        <div class="conditional-tag">
+            <p><strong>Attention:</strong> The Universe Language is still under testing and development. It is a work in progress by the WebSolvus team.</p>
+        </div>
+
+        <!-- Toast Message -->
+        <div class="toast-message" id="toast">Still under testing. Very soon you will get it.</div>
+
+        <div class="copyright">
+            &copy; Copyright <strong>WebSolvus</strong>. All Rights Reserved
+        </div>
+    </div>
+    <script>
+        function showToast() {
+            var toast = document.getElementById("toast");
+            toast.style.visibility = "visible";
+            setTimeout(function () {
+                toast.style.visibility = "hidden";
+            }, 3000); // Hide toast after 3 seconds
+        }
+    </script>
+</body>
+
+</html>
