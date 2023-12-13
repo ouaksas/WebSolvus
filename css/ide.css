@@ -122,3 +122,10 @@ pre code {
     border-radius: 5px;
     z-index: 1;
 }
+
+.easier-logo {
+    width: 20%; 
+    display: block;
+    margin: 0 auto; 
+    margin-bottom: 20px; 
+}
