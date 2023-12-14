@@ -42,7 +42,12 @@ body {
     z-index: 1000; /* Ensure the header is on top of other elements */
 }
 
-
+.navigation-container {
+    background-color: #eee;
+    width: 200px; /* Adjust the width as needed */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .main-container {
     margin-top: 80px; /* Adjust this margin to accommodate the fixed header height */
 
@@ -85,6 +90,32 @@ body {
     font-size: 30px;
     margin-bottom: 10px;
     text-align: left;
+}
+.video-list {
+    list-style: none;
+    padding: 0;
+}
+
+.video-list li {
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    transition: color 0.3s; /* Add a smooth transition effect for color changes */
+}
+
+.video-list li:hover {
+    background-color: #f5f5f5;
+}
+
+/* Add an underline to the items in the playlist */
+.video-list li:hover,
+.video-list li.active {
+    text-decoration: underline;
+}
+
+/* Change the color of the clicked item */
+.video-list li.active {
+    color: #FF5733; /* Change to your desired color */
 }
 
 #videoDescription {
@@ -132,4 +163,29 @@ button:hover {
     border: none;
     padding: 8px 12px;
     cursor: pointer;
+}
+.unlock-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+#unlockInput {
+    margin: 10px 0;
+    padding: 8px;
+    width: 200px; /* Adjust the width as needed */
+    border: 1px solid #3498db; /* Blue border */
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.buttonUnlock {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
 }

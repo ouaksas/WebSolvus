@@ -17,45 +17,57 @@
     <title>Learning</title>
 </head>
 <body>
-    <div class="site-container">
+    <div id="unlockPage" class="unlock-page">
+        <label for="unlockInput">Enter the code to unlock:</label>
+        <input type="text" id="unlockInput">
+        <button class="buttonUnlock" onclick="unlockPage()">Unlock</button>
+    </div>
+
+    <div id="learningPage" class="site-container" style="display:none;">
         <header class="fixed-header">
             <div class="header-content">
                 <img src="img/websolvus_logo.png" alt="WebSolvus Logo" class="logo">
-                <!-- <h1 class="websolvus-class">Class</h1> -->
             </div>
         </header>
-   
-    <div class="main-container">
-        <div class="video-container" id="videoContainer">
-            <video controls id="videoPlayer">
-                Your browser does not support the video tag.
-            </video>
-            <div class="video-description">
-                <h2 id="videoTitle"></h2>
-                <p id="videoDescription"></p>
+
+        <div class="main-container">
+            <div class="navigation-container">
+                <ul id="videoList" class="video-list">
+                    <!-- Dynamically generate list items for each video in the playlist -->
+                </ul>
+            </div>
+            <div class="video-container" id="videoContainer">
+                <video controls id="videoPlayer">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-description">
+                    <h2 id="videoTitle"></h2>
+                    <p id="videoDescription"></p>
+                </div>
+            </div>
+    
+            <div class="pdf-viewer-container">
+                <div id="pdfViewer" class="pdf-viewer">
+                    <iframe id="pdfViewerIframe" width="100%" height="400px" frameborder="1"></iframe>
+                </div>
             </div>
         </div>
 
-        <div class="pdf-viewer-container">
-            <div id="pdfViewer" class="pdf-viewer">
-                <iframe id="pdfViewerIframe" width="100%" height="400px" frameborder="1"></iframe>
-            </div>
+        <div class="video-controls">
+            <button id="togglePdfBtn" onclick="togglePdfViewer()">PDF </button>
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+        <div class="conditional-tag">
+            <p><strong>Attention:</strong> This class of WebSolvus is reserved for the WebSolvus team and should not be shared anywhere without the permission of WebSolvus.</p>
+        </div>
+        <div class="copyright">
+            &copy; Copyright <strong>WebSolvus</strong>. All Rights Reserved
         </div>
     </div>
 
-    <div class="video-controls">
-        <button id="togglePdfBtn" onclick="togglePdfViewer()">PDF </button>
-
-        <button id="prevBtn">Previous</button>
-        <button id="nextBtn">Next</button>
-    </div>
-    <div class="conditional-tag">
-        <p><strong>Attention:</strong> This class of WebSolvus is reserved for the WebSolvus team and should not be shared anywhere without the permission of WebSolvus.</p>
-    </div>
-    <div class="copyright">
-        &copy; Copyright <strong>WebSolvus</strong>. All Rights Reserved
-    </div>
     <script src="js/script.js"></script>
-    </div>  
+    <script src="js/constants.js"></script>
+  
 </body>
 </html>
