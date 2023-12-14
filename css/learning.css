@@ -118,6 +118,7 @@ body {
 /* Change the color of the clicked item */
 .video-list li.active {
     color: #FF5733; /* Change to your desired color */
+    width: 100px;
 }
 
 #videoDescription {
@@ -194,7 +195,7 @@ button:hover {
 
 .conditional-tag {
     position: fixed;
-    bottom: 100;
+    /* bottom: 100; */
     width: 100%;
     background-color: #ffeeba;
     padding: 5px;

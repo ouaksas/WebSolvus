@@ -6,35 +6,24 @@ document.addEventListener('DOMContentLoaded', function () {
     
     const playlist = [
         {
-            "title": "Formation 1",
-            "description": "Lorem is simply dummy text of the printing and typesetting s. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "path_video": "videos/formation1.mp4",
+            "title": "1.1 Introduction",
+            "description": "Introduction",
+            "path_video": "https://drive.google.com/uc?id=1Q6GyHC-ozPG8YvMAadHkOke1xrFegSXf",
             "path_pdf": "pdf/pdf1.pdf",
         },
         {
-            "title": "Formation 2",
-            "description": "Description for Formation 2",
-            "path_video": "videos/formation2.mp4",
+            "title": "1.2 Création d'un projet Angular",
+            "description": "Création d'un projet Angular",
+            "path_video": "https://drive.google.com/uc?id=1zCsW8a-TqHg878BTZUvNrhy5J7boChVL",
             "path_pdf": "pdf/pdf2.pdf"
         },
         {
-            "title": "Formation 3",
-            "description": "Description for Formation 2",
-            "path_video": "videos/formation2.mp4",
+            "title": "1.3 Arborescence d'un projet Angular",
+            "description": "Arborescence d'un projet Angular",
+            "path_video": "https://drive.google.com/uc?id=1rVZAK89uDqPEPL1fQSIm1MxtlE-V8Yny",
             "path_pdf": "pdf/pdf2.pdf"
         },
-        {
-            "title": "Formation 4",
-            "description": "Description for Formation 4",
-            "path_video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-            "path_pdf": "pdf/pdf2.pdf"
-        },
-        {
-            "title": "Formation 5",
-            "description": "Description for Formation 5",
-            "path_video": "https://drive.google.com/uc?export=download&id=1Z3KxnDd2eMO3xVGeIHnhQe82xjLiYfwL",
-            "path_pdf": "pdf/pdf2.pdf"
-        },
+        
     ];
   
     let currentVideoIndex = 0;
