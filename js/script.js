@@ -29,6 +29,12 @@ document.addEventListener('DOMContentLoaded', function () {
             "path_video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
             "path_pdf": "pdf/pdf2.pdf"
         },
+        {
+            "title": "Formation 5",
+            "description": "Description for Formation 5",
+            "path_video": "https://drive.google.com/uc?export=download&id=1Z3KxnDd2eMO3xVGeIHnhQe82xjLiYfwL",
+            "path_pdf": "pdf/pdf2.pdf"
+        },
     ];
 
     let currentVideoIndex = 0;
