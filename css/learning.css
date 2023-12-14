@@ -5,7 +5,6 @@ body {
     background-color: #ffffff; /* Light Grey */
 }
 
-
 .header-content {
     display: flex;
     align-items: center;
@@ -211,4 +210,43 @@ button:hover {
     padding: 10px;
     background-color: #0044ff; /* Blue */
     color: #FFFFFF; /* White */
+}
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for screens with a maximum width of 768px */
+    .fixed-header {
+        padding: 5px; /* Adjust the padding for smaller screens */
+    }
+
+    .websolvus-class {
+        font-size: 14px;
+        left: 10px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .main-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        margin-top: 60px; /* Adjust the margin for smaller screens */
+    }
+
+    .video-container,
+    .pdf-viewer-container {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    #videoPlayer {
+        border-radius: 0; /* Remove border-radius on smaller screens */
+    }
+
+    .pdf-viewer {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .conditional-tag,
+    .copyright {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
 }
