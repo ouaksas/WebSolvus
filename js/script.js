@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const playlist = [
         {
             "title": "Formation 1",
-            "description": "Lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem is simply dummy text of the printing and typesetting s. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "path_video": "videos/formation1.mp4",
             "path_pdf": "pdf/pdf1.pdf",
         },
@@ -36,8 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "path_pdf": "pdf/pdf2.pdf"
         },
     ];
-    // const sample = require('../jsons/videos.json');
-    // console.log(sample);    
+  
     let currentVideoIndex = 0;
     let descriptionExpanded = false;
 
