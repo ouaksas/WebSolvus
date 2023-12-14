@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const playlist = [
         {
             "title": "Formation 1",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "path_video": "videos/formation1.mp4",
             "path_pdf": "pdf/pdf1.pdf",
         },
@@ -38,15 +38,37 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     let currentVideoIndex = 0;
+    let descriptionExpanded = false;
+
+    function updateDescription() {
+        const videoDescription = document.getElementById('videoDescription');
+        const toggleDescriptionBtn = document.getElementById('toggleDescriptionBtn');
+        const descriptionText = playlist[currentVideoIndex].description;
+
+        // Display the full description or a truncated version based on the current state
+        if (descriptionExpanded) {
+            videoDescription.innerHTML = descriptionText;
+            toggleDescriptionBtn.textContent = 'Show less';
+        } else {
+            const truncatedDescription = descriptionText.substring(0, 150) + '...';
+            videoDescription.innerHTML = truncatedDescription;
+            toggleDescriptionBtn.textContent = 'Show more';
+        }
+    }
+
+    function toggleDescription() {
+        descriptionExpanded = !descriptionExpanded;
+        updateDescription();
+    }
 
     function updateVideo() {
         const videoPlayer = document.getElementById('videoPlayer');
         videoPlayer.src = playlist[currentVideoIndex].path_video;
 
         const videoTitle = document.getElementById('videoTitle');
-        const videoDescription = document.getElementById('videoDescription');
         videoTitle.textContent = playlist[currentVideoIndex].title;
-        videoDescription.textContent = playlist[currentVideoIndex].description;
+
+        updateDescription();
     }
 
     function updatePdf() {
@@ -101,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
     updatePdf();
     populateVideoList();
 
-
+    // updateDescription()
     // Event listeners for next and previous buttons
     document.getElementById('nextBtn').addEventListener('click', nextVideo);
     document.getElementById('prevBtn').addEventListener('click', prevVideo);
@@ -109,6 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initially hide the PDF viewer
     document.getElementById('pdfViewer').style.display = 'none';
 });
+
 
 function togglePdfViewer() {
     var pdfViewer = document.getElementById('pdfViewer');
