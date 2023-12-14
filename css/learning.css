@@ -5,6 +5,7 @@ body {
     background-color: #ffffff; /* Light Grey */
 }
 
+
 .header-content {
     display: flex;
     align-items: center;
@@ -146,19 +147,7 @@ button {
 button:hover {
     background-color: #cc0000; /* Darker Red */
 }
-.conditional-tag {
-    background-color: #ffeeba;
-    padding: 1px;
-    text-align: center;
-    color: #c28f00;
-}
-.copyright {
-    margin-top: 1;
-    text-align: center;
-    padding: 1px;
-    background-color: #0044ff; /* Blue */
-    color: #FFFFFF; /* White */
-}
+
 #togglePdfBtn {
     background-color: #3498db;
     color: #fff;
@@ -199,4 +188,27 @@ button:hover {
     height: 100%;
     z-index: 2;
     pointer-events: none;
+}
+
+
+
+
+.conditional-tag {
+    position: fixed;
+    bottom: 100;
+    width: 100%;
+    background-color: #ffeeba;
+    padding: 5px;
+    text-align: center;
+    color: #c28f00;
+}
+
+.copyright {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #0044ff; /* Blue */
+    color: #FFFFFF; /* White */
 }
