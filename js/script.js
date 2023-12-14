@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const playlist = [
         {
             "title": "Formation 1",
-            "description": "Lorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem IpsLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "description": "Lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "path_video": "videos/formation1.mp4",
             "path_pdf": "pdf/pdf1.pdf",
         },
@@ -66,7 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
         videoPlayer.src = playlist[currentVideoIndex].path_video;
 
         const videoTitle = document.getElementById('videoTitle');
+        const pageTitle = document.getElementById('pageTitle');
         videoTitle.textContent = playlist[currentVideoIndex].title;
+        pageTitle.textContent = playlist[currentVideoIndex].title;
 
         updateDescription();
     }
@@ -89,34 +91,47 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     function populateVideoList() {
         const videoList = document.getElementById('videoList');
-
+    
         // Clear existing list items
         videoList.innerHTML = "";
-
+    
         // Populate the list with buttons for each video in the playlist
         playlist.forEach((video, index) => {
             const listItem = document.createElement('li');
-            listItem.textContent = video.title;
-
+            const playIcon = document.createElement('i');
+            
+            // Add Font Awesome classes for the play icon
+            playIcon.classList.add('fas', 'fa-play', 'play-icon');
+    
+            listItem.appendChild(playIcon);
+    
             // Add a click event listener to switch to the corresponding video
             listItem.addEventListener('click', function () {
                 currentVideoIndex = index;
                 updateVideo();
                 updatePdf();
-
+    
                 // Remove "active" class from all items
                 document.querySelectorAll('.video-list li').forEach(item => {
                     item.classList.remove('active');
                 });
-
+    
                 // Add "active" class to the clicked item
                 listItem.classList.add('active');
             });
-
+    
+            // Create a span for the video title
+            const titleSpan = document.createElement('span');
+            titleSpan.textContent = video.title;
+    
+            // Append the title span to the list item
+            listItem.appendChild(titleSpan);
+    
+            // Append the list item to the video list
             videoList.appendChild(listItem);
         });
     }
-
+    
     
     // Initial video update
     updateVideo();
@@ -226,6 +241,30 @@ function unlockPage() {
         document.getElementById('unlockPage').style.display = 'none';
         document.getElementById('learningPage').style.display = 'block';
     } else {
-        alert('Incorrect code. Please try again.');
+        alert('Incorrect code. Please try again.'+getCurrentTemperature());
+    }
+}
+
+
+async function getCurrentTemperature() {
+    const apiKey = 'cf202595c675b9cb8624c27eb3ddcbbe';
+    const city = 'kenitra'; // Replace with the name of your city
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+
+        if (response.ok) {
+            // Assuming the temperature is available in the 'main' object
+            const temperature = Math.round(data.main.temp);
+            return temperature;
+        } else {
+            console.error('Failed to fetch temperature:', data.message);
+            return null;
+        }
+    } catch (error) {
+        console.error('Error fetching temperature:', error.message);
+        return null;
     }
 }
