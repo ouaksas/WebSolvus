@@ -13,7 +13,6 @@
             event.preventDefault();
         });
     </script>
-
     <title>Learning</title>
 </head>
 <body>
@@ -27,16 +26,18 @@
         <header class="fixed-header">
             <div class="header-content">
                 <img src="img/websolvus_logo.png" alt="WebSolvus Logo" class="logo">
+                <p class="websolvus-class" >Class</p>
             </div>
         </header>
 
         <div class="main-container">
             <div class="navigation-container">
                 <ul id="videoList" class="video-list">
-                    <!-- Dynamically generate list items for each video in the playlist -->
                 </ul>
             </div>
             <div class="video-container" id="videoContainer">
+                <div class="overlay"></div>
+
                 <video controls id="videoPlayer">
                     Your browser does not support the video tag.
                 </video>
@@ -69,7 +70,6 @@
     </div>
 
     <script src="js/script.js"></script>
-    <script src="js/constants.js"></script>
   
 </body>
 </html>
