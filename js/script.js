@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
             "path_pdf": "pdf/pdf2.pdf"
         },
     ];
-
+    // const sample = require('../jsons/videos.json');
+    // console.log(sample);    
     let currentVideoIndex = 0;
     let descriptionExpanded = false;
 
@@ -44,8 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const videoDescription = document.getElementById('videoDescription');
         const toggleDescriptionBtn = document.getElementById('toggleDescriptionBtn');
         const descriptionText = playlist[currentVideoIndex].description;
-
-        // Display the full description or a truncated version based on the current state
         if (descriptionExpanded) {
             videoDescription.innerHTML = descriptionText;
             toggleDescriptionBtn.textContent = 'Show less';

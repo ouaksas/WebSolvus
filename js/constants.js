@@ -2,7 +2,7 @@
 const playlist = [
     {
         "title": "Formation 1",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "description": "Lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         "path_video": "videos/formation1.mp4",
         "path_pdf": "pdf/pdf1.pdf",
     },
@@ -18,7 +18,18 @@ const playlist = [
         "path_video": "videos/formation2.mp4",
         "path_pdf": "pdf/pdf2.pdf"
     },
+    {
+        "title": "Formation 4",
+        "description": "Description for Formation 4",
+        "path_video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        "path_pdf": "pdf/pdf2.pdf"
+    },
+    {
+        "title": "Formation 5",
+        "description": "Description for Formation 5",
+        "path_video": "https://drive.google.com/uc?export=download&id=1Z3KxnDd2eMO3xVGeIHnhQe82xjLiYfwL",
+        "path_pdf": "pdf/pdf2.pdf"
+    },
 ];
-
 // Export the playlist so that it can be used in other files
 export { playlist };
