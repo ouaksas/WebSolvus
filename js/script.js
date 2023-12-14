@@ -130,6 +130,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initially hide the PDF viewer
     document.getElementById('pdfViewer').style.display = 'none';
+    document.getElementById('toggleDescriptionBtn').addEventListener('click', toggleDescription);
+
 });
 
 
