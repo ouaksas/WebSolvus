@@ -228,7 +228,7 @@ function unlockPage() {
         document.getElementById('unlockPage').style.display = 'none';
         document.getElementById('learningPage').style.display = 'block';
     } else {
-        alert('Incorrect code. Please try again.'+getCurrentTemperature());
+        alert('Incorrect code. Please try again.');
     }
 }
 
