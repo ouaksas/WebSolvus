@@ -23,6 +23,13 @@ document.addEventListener('DOMContentLoaded', function () {
             "path_video": "https://drive.google.com/uc?id=1rVZAK89uDqPEPL1fQSIm1MxtlE-V8Yny",
             "path_pdf": "pdf/pdf2.pdf"
         },
+        {
+            "title": "1.4 Integrer Bootstrap à Angular",
+            "description": "Integrer Bootstrap à Angular",
+            "path_video": "https://drive.google.com/uc?id=1IyGRoWITCHWCfzEc3yIuR8LUdxi9nbMZ",
+            "path_pdf": "pdf/pdf2.pdf"
+        },
+
         
     ];
   
