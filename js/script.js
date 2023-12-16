@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "title": "1.1 Introduction",
             "description": "Introduction",
             "path_video": "https://drive.google.com/uc?id=1Q6GyHC-ozPG8YvMAadHkOke1xrFegSXf",
-            "path_pdf": "pdf/pdf1.pdf",
+            "path_pdf": "",
         },
         {
             "title": "1.2 Création d'un projet Angular",
@@ -21,15 +21,27 @@ document.addEventListener('DOMContentLoaded', function () {
             "title": "1.3 Arborescence d'un projet Angular",
             "description": "Arborescence d'un projet Angular",
             "path_video": "https://drive.google.com/uc?id=1rVZAK89uDqPEPL1fQSIm1MxtlE-V8Yny",
-            "path_pdf": "pdf/pdf2.pdf"
+            "path_pdf": ""
         },
         {
             "title": "1.4 Integrer Bootstrap à Angular",
             "description": "Integrer Bootstrap à Angular",
             "path_video": "https://drive.google.com/uc?id=1IyGRoWITCHWCfzEc3yIuR8LUdxi9nbMZ",
-            "path_pdf": "pdf/pdf2.pdf"
+            "path_pdf": ""
+        },
+        {
+            "title": "2.1 Architecture Angular les Modules",
+            "description": "Architecture Angular les Modules",
+            "path_video": "https://drive.google.com/uc?id=1TrjiC8ECDG4rhq55s8ryr-ZfMZ963_pt",
+            "path_pdf": ""
         },
 
+        {
+            "title": "2.2 Angular-les Composants",
+            "description": "Angular-les Composants",
+            "path_video": "https://drive.google.com/uc?id=1YLBci6xN-xFpNKN7_XdJH0icgnsF-PoX",
+            "path_pdf": ""
+        },
         
     ];
   
@@ -235,7 +247,7 @@ function unlockPage() {
         document.getElementById('unlockPage').style.display = 'none';
         document.getElementById('learningPage').style.display = 'block';
     } else {
-        alert('Incorrect code. Please try again.'+getCurrentTemperature());
+        alert('Incorrect code. Please try again.'+remainToday(1, concatenatedCode, 1).toString());
     }
 }
 
