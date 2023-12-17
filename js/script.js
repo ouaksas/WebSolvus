@@ -44,6 +44,13 @@ document.addEventListener('DOMContentLoaded', function () {
             "path_video": "https://drive.google.com/uc?id=1ClqILOlA710_48LIy_IbWVSBTyxS-3YG",
             "path_pdf": ""
         },
+        {
+            "title": "2.4 Angular_le DataBinding",
+            "description": "Angular_le DataBinding",
+            "path_video": "https://drive.google.com/uc?export=download&id=1uoJ53a8xz-hhW6s5LCIOveohsYZcogIS",
+            "path_pdf": ""
+        },
+        
         
     ];
   
