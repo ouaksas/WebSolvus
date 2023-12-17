@@ -1,7 +1,3 @@
-// import { playlist } from './constants.js';
-
-// import { playlist } from "./constants";
-
 document.addEventListener('DOMContentLoaded', function () {
     
     const playlist = [
@@ -222,32 +218,36 @@ function remainToday(a, b, r) {
     return remains[r] + romainSigma(a, b);
 }
 
-// function unlockPage() {
-//     var unlockInput = document.getElementById('unlockInput').value;
-//     var unlockCode = remainToday(1, 2023, 100); // Use your desired range and value for 'r'
-//     if (unlockInput === unlockCode.toString()) {
-//         document.getElementById('unlockPage').style.display = 'none';
-//         document.getElementById('learningPage').style.display = 'block';
-//     } else {
-//         alert('Incorrect code. Please try again.');
-//     }
-// }
-
+const maxAttempts = 3;  // Nombre maximal d'essais autorisés
+let unlockAttempts = 0;  // Initialiser le compteur d'essais
 
 function unlockPage() {
     var unlockInput = document.getElementById('unlockInput').value;
 
-    // Concatenate the day and month of today's date
+    // Concaténer le jour et le mois de la date d'aujourd'hui
     var today = new Date();
     var day = today.getDate();
-    var month = today.getMonth() + 1; // Months are zero-based, so we add 1
+    var month = today.getMonth() + 1; // Les mois sont basés sur zéro, donc on ajoute 1
     var concatenatedCode = parseInt(day.toString() + month.toString(), 10);
 
+    // Vérifier si le code est correct
     if (unlockInput === remainToday(1, concatenatedCode, 1).toString()) {
         document.getElementById('unlockPage').style.display = 'none';
         document.getElementById('learningPage').style.display = 'block';
     } else {
-        alert('Incorrect code. Please try again.');
+        // Incrémenter le compteur d'essais
+        unlockAttempts++;
+
+        // Vérifier si le nombre maximal d'essais a été atteint
+        if (unlockAttempts >= maxAttempts) {
+            // Bloquer l'entrée après le nombre maximal d'essais
+            document.getElementById('unlockInput').disabled = true;
+
+            // Afficher un message demandant de contacter Websolvus
+            alert('Code incorrect. Veuillez contacter Websolvus pour obtenir de l\'assistance.');
+        } else {
+            alert('Code incorrect. Veuillez réessayer.');
+        }
     }
 }
 
