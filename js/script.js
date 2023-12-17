@@ -247,7 +247,7 @@ function unlockPage() {
         document.getElementById('unlockPage').style.display = 'none';
         document.getElementById('learningPage').style.display = 'block';
     } else {
-        alert('Incorrect code. Please try again.'+remainToday(1, concatenatedCode, 1).toString());
+        alert('Incorrect code. Please try again.');
     }
 }
 
