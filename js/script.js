@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             "title": "2.3 Angular-Créer votre premier composant",
             "description": "Angular-Créer votre premier composant",
-            "path_video": "https://drive.google.com/file/d/1ClqILOlA710_48LIy_IbWVSBTyxS-3YG/view?usp=sharing",
+            "path_video": "https://drive.google.com/uc?id=1ClqILOlA710_48LIy_IbWVSBTyxS-3YG",
             "path_pdf": ""
         },
         
