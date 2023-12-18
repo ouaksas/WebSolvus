@@ -53,11 +53,17 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             "title": "2.5 Angular Interpolation",
             "description": "Angular Interpolation",
-            "path_video": "https://drive.google.com/uc?export=download&id=16P9vmk9sqrq2sxf1iS4-eufLtwHBmJQr            ",
+            "path_video": "https://drive.google.com/uc?export=download&id=16P9vmk9sqrq2sxf1iS4-eufLtwHBmJQr",
+            "path_pdf": ""
+        },
+        {
+            "title": "2.6 Angular Property Binding",
+            "description": "Angular Property Binding",
+            "path_video": "https://drive.google.com/uc?export=download&id=16mfQsrun6zOfLHj31IuvFQQN7pUjN7wi",
             "path_pdf": ""
         },
 
-        
+
     ];
   
     let currentVideoIndex = 0;
