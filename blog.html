@@ -28,19 +28,16 @@
     }
 
     section {
-      max-width: 800px;
+      max-width: 100%;
       margin: 2em auto;
       padding: 1em;
       background-color: #ffffff;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-wrap: wrap; /* Allow items to wrap to the next line */
-      justify-content: space-between; /* Add space between items */
     }
 
     article {
-      width: calc(33.33% - 1em); /* Adjust the width as needed, subtracting margin */
+      width: 100%; /* Occupy full width on mobile */
       margin-bottom: 2em;
       background-color: #fff;
       border-radius: 8px;
@@ -54,8 +51,6 @@
       color: #ffffff;
       text-align: center;
       padding: 1em 0;
-      position: fixed;
-      bottom: 0;
       width: 100%;
     }
 
@@ -73,6 +68,17 @@
     /* Change link color on hover */
     h2 a:hover {
       text-decoration: underline;
+    }
+
+    /* Adjustments for small screens */
+    @media (max-width: 600px) {
+      section {
+        padding: 0.5em;
+      }
+
+      article {
+        margin-bottom: 1em;
+      }
     }
   </style>
 </head>
@@ -99,8 +105,6 @@
       <p>Coming Soon.</p>
       <!-- <p>Feel free to include code snippets, images, and other media to enhance your blog post.</p> -->
     </article>
-
-   
   </section>
 
   <footer>
