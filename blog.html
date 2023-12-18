@@ -15,13 +15,11 @@
 
     header {
       display: flex;
-    align-items: center;
-    /* justify-content: space-around; */
-    padding: 10px;
-    background-color: #ffffff;
-    border-bottom: 2px solid #007bff; /* Blue border */
+      align-items: center;
+      padding: 10px;
+      background-color: #ffffff;
+      border-bottom: 2px solid #007bff; /* Blue border */
     }
-
 
     h1 {
       margin: 0;
@@ -34,10 +32,19 @@
       background-color: #ffffff;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+      justify-content: space-between; /* Add space between items */
     }
 
     article {
+      width: calc(33.33% - 1em); /* Adjust the width as needed, subtracting margin */
       margin-bottom: 2em;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 1em;
+      box-sizing: border-box;
     }
 
     footer {
@@ -49,10 +56,22 @@
       bottom: 0;
       width: 100%;
     }
+
     .logo {
-    width: 120px;
-    height: auto;
-}
+      width: 120px;
+      height: auto;
+    }
+
+    /* Add this style for clickable titles */
+    h2 a {
+      color: #007bff; /* Blue color for links */
+      text-decoration: none; /* Remove underline from links */
+    }
+
+    /* Change link color on hover */
+    h2 a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
@@ -60,20 +79,26 @@
   <header>
     <!-- <h1>WebSolvus Blog</h1> -->
     <img src="img/websolvus_logo.png" alt="WebSolvus Logo" class="logo">
-
   </header>
 
   <section>
     <article>
-      <h2>Blog Post Title 1</h2>
-      <p>Content of the blog post goes here. You can add multiple paragraphs and format the text as needed.</p>
-      <p>Feel free to include code snippets, images, and other media to enhance your blog post.</p>
+      <h2><a href="vcs.html">Git and Github</a></h2>
+      <p>The essentials of Git explained in five minutes</p>
+      <!-- <p>Feel free to include code snippets, images, and other media to enhance your blog post.</p> -->
+    </article>
+    <article>
+      <h2><a href="learning.html">Angular Tutorial</a></h2>
+      <p>Embark on a journey into the world of Angular with WebSolvus's comprehensive tutorial. Whether you're a beginner or an experienced developer, our Angular tutorial is designed to guide you through the essentials of this powerful front-end framework.</p>
+      <p>Learn the fundamentals of Angular, including components, modules, services, and directives. Discover how to build dynamic and responsive web applications with ease. Dive into advanced topics such as routing, forms, and state management to elevate your Angular skills to the next level.</p>
+    </article>
+    <article>
+      <h2><a href="#">Comming Soon</a></h2>
+      <p>Comming Soon.</p>
+      <!-- <p>Feel free to include code snippets, images, and other media to enhance your blog post.</p> -->
     </article>
 
-    <article>
-      <h2>Blog Post Title 2</h2>
-      <p>Another interesting blog post to showcase your company's expertise and knowledge in software development.</p>
-    </article>
+   
   </section>
 
   <footer>

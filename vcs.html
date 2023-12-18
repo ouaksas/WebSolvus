@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/vcs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="your-integrity-value" crossorigin="anonymous">
+    <link href="img/favicon.png" rel="icon">
+    <title id="pageTitle">Git and GitHub Tutorial</title>
+</head>
+<body>
+
+    <div id="learningPage" class="site-container">
+        <header class="fixed-header">
+            <div class="header-content">
+                <a href="index.html">
+                    <img src="img/websolvus_logo.png" alt="WebSolvus Logo" class="logo">
+                </a>
+            </div>
+        </header>
+
+        <section class="tutorial-content">
+            <h1>Welcome to the Git and GitHub Tutorial</h1>
+            <p>This tutorial will guide you through the basics of Git and GitHub.</p>
+
+            <h2>1. Initialize a Git Repository</h2>
+            <pre><code>git init</code></pre>
+            <p>Initialize a new Git repository in your project directory.</p>
+
+            <h2>2. Add Changes to the Staging Area</h2>
+            <pre><code>git add filename</code></pre>
+            <p>Add changes in the specified file to the staging area for the next commit.</p>
+
+            <h2>3. Commit Changes</h2>
+            <pre><code>git commit -m "Your commit message"</code></pre>
+            <p>Commit the changes in the staging area with a descriptive message.</p>
+
+            <h2>4. Push Changes to GitHub</h2>
+            <pre><code>git push origin branch-name</code></pre>
+            <p>Push your committed changes to the GitHub repository.</p>
+
+            <h2>5. Switch to a Different Branch</h2>
+            <pre><code>git checkout branch-name</code></pre>
+            <p>Switch to the specified branch.</p>
+
+            <h2>6. Create and Switch to a New Branch</h2>
+            <pre><code>git checkout -b new-branch-name</code></pre>
+            <p>Create a new branch and switch to it.</p>
+
+            <h2>7. Pull Changes from GitHub</h2>
+            <pre><code>git pull origin branch-name</code></pre>
+            <p>Pull the latest changes from the remote repository to your local repository.</p>
+
+            <h2>8. Merge Changes from Another Branch</h2>
+            <pre><code>git merge source-branch</code></pre>
+            <p>Merge changes from the source branch into the current branch.</p>
+        </section>
+
+        <div class="copyright">
+            &copy; Copyright <strong>WebSolvus</strong>. All Rights Reserved
+        </div>
+    </div>
+
+    <script src="js/vcs.js"></script>
+</body>
+</html>
