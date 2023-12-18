@@ -1,7 +1,3 @@
-// import { playlist } from './constants.js';
-
-// import { playlist } from "./constants";
-
 document.addEventListener('DOMContentLoaded', function () {
     
     const playlist = [
@@ -9,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "title": "1.1 Introduction",
             "description": "Introduction",
             "path_video": "https://drive.google.com/uc?id=1Q6GyHC-ozPG8YvMAadHkOke1xrFegSXf",
-            "path_pdf": "pdf/pdf1.pdf",
+            "path_pdf": "",
         },
         {
             "title": "1.2 Création d'un projet Angular",
@@ -21,8 +17,40 @@ document.addEventListener('DOMContentLoaded', function () {
             "title": "1.3 Arborescence d'un projet Angular",
             "description": "Arborescence d'un projet Angular",
             "path_video": "https://drive.google.com/uc?id=1rVZAK89uDqPEPL1fQSIm1MxtlE-V8Yny",
-            "path_pdf": "pdf/pdf2.pdf"
+            "path_pdf": ""
         },
+        {
+            "title": "1.4 Integrer Bootstrap à Angular",
+            "description": "Integrer Bootstrap à Angular",
+            "path_video": "https://drive.google.com/uc?id=1IyGRoWITCHWCfzEc3yIuR8LUdxi9nbMZ",
+            "path_pdf": ""
+        },
+        {
+            "title": "2.1 Architecture Angular les Modules",
+            "description": "Architecture Angular les Modules",
+            "path_video": "https://drive.google.com/uc?id=1TrjiC8ECDG4rhq55s8ryr-ZfMZ963_pt",
+            "path_pdf": ""
+        },
+
+        {
+            "title": "2.2 Angular-les Composants",
+            "description": "Angular-les Composants",
+            "path_video": "https://drive.google.com/uc?id=1YLBci6xN-xFpNKN7_XdJH0icgnsF-PoX",
+            "path_pdf": ""
+        },
+        {
+            "title": "2.3 Angular-Créer votre premier composant",
+            "description": "Angular-Créer votre premier composant",
+            "path_video": "https://drive.google.com/uc?id=1ClqILOlA710_48LIy_IbWVSBTyxS-3YG",
+            "path_pdf": ""
+        },
+        {
+            "title": "2.4 Angular_le DataBinding",
+            "description": "Angular_le DataBinding",
+            "path_video": "https://drive.google.com/uc?export=download&id=1uoJ53a8xz-hhW6s5LCIOveohsYZcogIS",
+            "path_pdf": ""
+        },
+        
         
     ];
   
@@ -203,32 +231,36 @@ function remainToday(a, b, r) {
     return remains[r] + romainSigma(a, b);
 }
 
-// function unlockPage() {
-//     var unlockInput = document.getElementById('unlockInput').value;
-//     var unlockCode = remainToday(1, 2023, 100); // Use your desired range and value for 'r'
-//     if (unlockInput === unlockCode.toString()) {
-//         document.getElementById('unlockPage').style.display = 'none';
-//         document.getElementById('learningPage').style.display = 'block';
-//     } else {
-//         alert('Incorrect code. Please try again.');
-//     }
-// }
-
+const maxAttempts = 3;  // Nombre maximal d'essais autorisés
+let unlockAttempts = 0;  // Initialiser le compteur d'essais
 
 function unlockPage() {
     var unlockInput = document.getElementById('unlockInput').value;
 
-    // Concatenate the day and month of today's date
+    // Concaténer le jour et le mois de la date d'aujourd'hui
     var today = new Date();
     var day = today.getDate();
-    var month = today.getMonth() + 1; // Months are zero-based, so we add 1
+    var month = today.getMonth() + 1; // Les mois sont basés sur zéro, donc on ajoute 1
     var concatenatedCode = parseInt(day.toString() + month.toString(), 10);
 
+    // Vérifier si le code est correct
     if (unlockInput === remainToday(1, concatenatedCode, 1).toString()) {
         document.getElementById('unlockPage').style.display = 'none';
         document.getElementById('learningPage').style.display = 'block';
     } else {
-        alert('Incorrect code. Please try again.');
+        // Incrémenter le compteur d'essais
+        unlockAttempts++;
+
+        // Vérifier si le nombre maximal d'essais a été atteint
+        if (unlockAttempts >= maxAttempts) {
+            // Bloquer l'entrée après le nombre maximal d'essais
+            document.getElementById('unlockInput').disabled = true;
+
+            // Afficher un message demandant de contacter Websolvus
+            alert('Code incorrect. Veuillez contacter Websolvus pour obtenir de l\'assistance.');
+        } else {
+            alert('Code incorrect. Veuillez réessayer.');
+        }
     }
 }
 
