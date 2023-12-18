@@ -242,6 +242,8 @@ function unlockPage() {
     var day = today.getDate();
     var month = today.getMonth() + 1; // Les mois sont basés sur zéro, donc on ajoute 1
     var concatenatedCode = parseInt(day.toString() + month.toString(), 10);
+    // console.log(getCurrentTemperature())
+    //console.log(remainToday(1, concatenatedCode*concatenatedCode, 2023).toString())
 
     // Vérifier si le code est correct
     if (unlockInput === remainToday(1, concatenatedCode, 1).toString()) {
@@ -267,7 +269,7 @@ function unlockPage() {
 
 async function getCurrentTemperature() {
     const apiKey = 'cf202595c675b9cb8624c27eb3ddcbbe';
-    const city = 'kenitra'; // Replace with the name of your city
+    const city = 'kénitra'; // Replace with the name of your city
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     try {
