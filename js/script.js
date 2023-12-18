@@ -50,7 +50,13 @@ document.addEventListener('DOMContentLoaded', function () {
             "path_video": "https://drive.google.com/uc?export=download&id=1uoJ53a8xz-hhW6s5LCIOveohsYZcogIS",
             "path_pdf": ""
         },
-        
+        {
+            "title": "2.5 Angular Interpolation",
+            "description": "Angular Interpolation",
+            "path_video": "https://drive.google.com/uc?export=download&id=16P9vmk9sqrq2sxf1iS4-eufLtwHBmJQr            ",
+            "path_pdf": ""
+        },
+
         
     ];
   
