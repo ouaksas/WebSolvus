@@ -255,10 +255,10 @@ function unlockPage() {
     var month = today.getMonth() + 1; // Les mois sont basés sur zéro, donc on ajoute 1
     var concatenatedCode = parseInt(day.toString() + month.toString(), 10);
     // console.log(getCurrentTemperature())
-    //console.log(remainToday(1, concatenatedCode*concatenatedCode, 2023).toString())
+    console.log(remainToday(1, concatenatedCode*2023, 2023).toString())
 
     // Vérifier si le code est correct
-    if (unlockInput === remainToday(1, concatenatedCode, 1).toString()) {
+    if (unlockInput === remainToday(1, concatenatedCode*2023, 2023).toString()) {
         document.getElementById('unlockPage').style.display = 'none';
         document.getElementById('learningPage').style.display = 'block';
     } else {
