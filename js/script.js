@@ -62,6 +62,27 @@ document.addEventListener('DOMContentLoaded', function () {
             "path_video": "https://drive.google.com/uc?export=download&id=16mfQsrun6zOfLHj31IuvFQQN7pUjN7wi",
             "path_pdf": ""
         },
+        {
+            "title": "2.7 Angular Event Binding",
+            "description": "Angular Event Binding",
+            "path_video": "https://drive.google.com/uc?export=download&id=1hpMPjJ2ErAHTQ3DC3kC58VElztvNBoWb",
+            "path_pdf": ""
+        },
+        {
+            "title": "2.9 Correction Workshop 1- Composant Web",
+            "description": "Correction Workshop 1- Composant Web",
+            "path_video": "https://drive.google.com/uc?export=download&id=1-Hkf2TC_PSKtxprLnzCNibLwRAePpNRL",
+            "path_pdf": ""
+        },
+        {
+            "title": "3.1 Composants imbriqués",
+            "description": "Composants imbriqués",
+            "path_video": "https://drive.google.com/uc?export=download&id=1XTdLLiAEyDFWySvqT9GfZ6KPskmpQ98-",
+            "path_pdf": ""
+        },
+
+
+        
 
 
     ];
