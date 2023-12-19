@@ -33,20 +33,20 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         {
-            "title": "2.2 Angular-les Composants",
-            "description": "Angular-les Composants",
+            "title": "2.2 Angular les Composants",
+            "description": "Angular les Composants",
             "path_video": "https://drive.google.com/uc?id=1YLBci6xN-xFpNKN7_XdJH0icgnsF-PoX",
             "path_pdf": ""
         },
         {
-            "title": "2.3 Angular-Créer votre premier composant",
-            "description": "Angular-Créer votre premier composant",
+            "title": "2.3 Angular Créer votre premier composant",
+            "description": "Angular Créer votre premier composant",
             "path_video": "https://drive.google.com/uc?id=1ClqILOlA710_48LIy_IbWVSBTyxS-3YG",
             "path_pdf": ""
         },
         {
-            "title": "2.4 Angular_le DataBinding",
-            "description": "Angular_le DataBinding",
+            "title": "2.4 Angular le DataBinding",
+            "description": "Angular le DataBinding",
             "path_video": "https://drive.google.com/uc?export=download&id=1uoJ53a8xz-hhW6s5LCIOveohsYZcogIS",
             "path_pdf": ""
         },
