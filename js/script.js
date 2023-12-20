@@ -80,10 +80,19 @@ document.addEventListener('DOMContentLoaded', function () {
             "path_video": "https://drive.google.com/uc?export=download&id=1XTdLLiAEyDFWySvqT9GfZ6KPskmpQ98-",
             "path_pdf": ""
         },
-
-
+        {
+            "title": "3.2 Correction Workshop 2 Part 1",
+            "description": "Correction Workshop 2 Part 1",
+            "path_video": "https://drive.google.com/uc?export=download&id=1kSxeovF7U70A91uo3wWUtaRSoKy4byNP",
+            "path_pdf": ""
+        },
+        {
+            "title": "3.3 Correction Workshop 2 Part 2",
+            "description": "Correction Workshop 2 Part 2",
+            "path_video": "https://drive.google.com/uc?export=download&id=1qg5oWBC9DBepM4DltfcLe5d5XPcbzX3l",
+            "path_pdf": ""
+        },
         
-
 
     ];
   
