@@ -33,7 +33,7 @@
                 </a>
             </div>
         </header>
-
+        
         <div class="main-container">
             <div class="navigation-container">
                 <ul id="videoList" class="video-list">
@@ -50,6 +50,11 @@
                     <p id="videoDescription"></p>
                     <button id="toggleDescriptionBtn" onclick="toggleDescription()">Show more</button>
                 </div>
+                <div class="video-controls">
+                    <button id="togglePdfBtn" onclick="togglePdfViewer()">PDF </button>
+                    <button id="nextBtn">Next</button>
+                    <button id="prevBtn">Previous</button>
+                </div>
             </div>
     
             <div class="pdf-viewer-container">
@@ -59,11 +64,7 @@
             </div>
         </div>
     
-        <div class="video-controls">
-            <button id="togglePdfBtn" onclick="togglePdfViewer()">PDF </button>
-            <button id="prevBtn">Previous</button>
-            <button id="nextBtn">Next</button>
-        </div>
+       
         <div class="conditional-tag">
             <p><strong>Attention:</strong> This class of WebSolvus is reserved for the WebSolvus team and should not be shared anywhere without the permission of WebSolvus.</p>
         </div>
