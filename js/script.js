@@ -278,7 +278,6 @@ let unlockAttempts = 0;  // Initialiser le compteur d'essais
 
 function unlockPage() {
     var unlockInput = document.getElementById('unlockInput').value;
-
     // Concaténer le jour et le mois de la date d'aujourd'hui
     var today = new Date();
     var day = today.getDate();
