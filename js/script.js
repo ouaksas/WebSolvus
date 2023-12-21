@@ -91,8 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "description": "Correction Workshop 2 Part 2",
             "path_video": "https://drive.google.com/uc?export=download&id=1qg5oWBC9DBepM4DltfcLe5d5XPcbzX3l",
             "path_pdf": ""
-        },
-        
+        }, 
 
     ];
   
