@@ -112,7 +112,40 @@ document.addEventListener('DOMContentLoaded', function () {
             "path_pdf": ""
         }, 
 
+        {
+            "title": "5.2 Correction Workshop 4",
+            "description": "Correction Workshop 4",
+            "path_video": "https://drive.google.com/uc?export=download&id=1XdcrcRVkPWfTfhWPQtTnlcJ3Kf0U86Gy",
+            "path_pdf": ""
+        }, 
 
+        {
+            "title": "6.1 Correction Workshop numéro 5",
+            "description": "Correction Workshop numéro 5",
+            "path_video": "https://drive.google.com/file/d/1brzlzXPi4EtyOIUvhR4Uei-xkgSD60vn/view?usp=sharing",
+            "path_pdf": ""
+        }, 
+
+        {
+            "title": "7.1 HttpClient & Rest Api",
+            "description": "HttpClient & Rest Api",
+            "path_video": "https://drive.google.com/uc?export=download&id=1n2akbnsf3I5QwNhBMKYnusAG0P6iwOhl",
+            "path_pdf": ""
+        }, 
+
+        {
+            "title": "7.2 REST Api & HttpClient : GET",
+            "description": "REST Api & HttpClient : GET",
+            "path_video": "https://drive.google.com/uc?export=download&id=1Hn_kEdQmR08Q0RbgCLX9IfZsZriA5kyd",
+            "path_pdf": ""
+        }, 
+
+        {
+            "title": "7.3# REST Api & HttpClient: POST",
+            "description": "REST Api & HttpClient : POST",
+            "path_video": "https://drive.google.com/uc?export=download&id=1vLhR0BWZZ2F_2xzYAeMNHXTQ6aFrAZx_",
+            "path_pdf": ""
+        }, 
     ];
   
     let currentVideoIndex = 0;
