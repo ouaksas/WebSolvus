@@ -105,6 +105,13 @@ document.addEventListener('DOMContentLoaded', function () {
             "path_pdf": ""
         }, 
 
+        {
+            "title": "5.1 Angular routing: mise en place d'un système de routing",
+            "description": "Angular routing: mise en place d'un système de routing",
+            "path_video": "https://drive.google.com/uc?export=download&id=1q0-q3L5Za_ZlyE8IQbUm9zMhBfzu6ns7",
+            "path_pdf": ""
+        }, 
+
 
     ];
   
