@@ -98,6 +98,12 @@ document.addEventListener('DOMContentLoaded', function () {
             "path_video": "https://drive.google.com/uc?export=download&id=1qg5oWBC9DBepM4DltfcLe5d5XPcbzX3l",
             "path_pdf": ""
         }, 
+        {
+            "title": "4.2 Correction Workshop 3",
+            "description": "Correction Workshop 3",
+            "path_video": "https://drive.google.com/uc?export=download&id=1UPiv7RvRx6xmthaB-RLc80Gv0JnRmkjS",
+            "path_pdf": ""
+        }, 
 
 
     ];
