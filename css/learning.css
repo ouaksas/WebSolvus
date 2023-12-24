@@ -103,6 +103,7 @@ body {
     padding: 8px;
     border-bottom: 1px solid #ddd;
     transition: color 0.3s; /* Add a smooth transition effect for color changes */
+    width: 200px;
 }
 
 .video-list li:hover {
