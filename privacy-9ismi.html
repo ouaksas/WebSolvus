@@ -6,20 +6,106 @@
     <title>Conditions d'Utilisation de l'Application 9ismi</title>
 </head>
 <body>
+    <button onclick="toggleLanguage()">Switch Language</button>
 
-    <h1>Conditions d'Utilisation de l'Application 9ismi</h1>
+    <h1 id="title-fr">Conditions d'Utilisation de l'Application 9ismi</h1>
+    <h1 id="title-en" style="display: none;">Terms of Use for 9ismi Application</h1>
     
-    <p><strong>Période de Préparation des Concours:</strong> Cette Application est conçue pour une utilisation pendant la période de préparation des concours. L'accès à l'Application est valable pendant la durée d'un seul concours.</p>
-    
-    <p><strong>Identifiant de Périphérique Unique:</strong> Vous devez utiliser un identifiant de périphérique unique pour accéder à l'Application. En cas de besoin de changement, veuillez contacter l'administration pour demander un changement d'identifiant de périphérique.</p>
-    
-    <p><strong>Captures d'Écran et Enregistrements Vidéo:</strong> Vous ne pouvez pas prendre de captures d'écran ni enregistrer des vidéos de l'Application sans autorisation préalable de l'administration.</p>
-    
-    <p><strong>Confidentialité des Données:</strong> Vous vous engagez à maintenir la confidentialité des informations personnelles et du contenu de l'Application. Vous ne pouvez pas partager le contenu de quelque manière que ce soit.</p>
-    
-    <p><strong>Partage d'Audios sur WhatsApp:</strong> Vous pouvez partager des audios de l'Application sur WhatsApp, mais veuillez noter que les informations confidentielles des étudiants sont protégées par la loi et la confidentialité doit être respectée en tout temps.</p>
-    
-    <p><strong>Avertissement:</strong> L'application 9ismi.ma se réserve le droit de mettre fin à l'accès à l'Application en cas de non-respect de ces conditions d'utilisation.</p>
+    <p id="content-fr">
+        <strong>Période de Préparation des Concours:</strong> Cette Application est conçue pour une utilisation pendant la période de préparation des concours. L'accès à l'Application est valable pendant la durée d'un seul concours.
+    </p>
+    <p id="content-en" style="display: none;">
+        <strong>Exam Preparation Period:</strong> This application is designed for use during the exam preparation period. Access to the application is valid for the duration of a single exam.
+    </p>
+
+    <p id="unique-device-fr">
+        <strong>Identifiant de Périphérique Unique:</strong> Vous devez utiliser un identifiant de périphérique unique pour accéder à l'Application. En cas de besoin de changement, veuillez contacter l'administration pour demander un changement d'identifiant de périphérique.
+    </p>
+    <p id="unique-device-en" style="display: none;">
+        <strong>Unique Device Identifier:</strong> You must use a unique device identifier to access the application. In case of a need for change, please contact the administration to request a change of device identifier.
+    </p>
+
+    <p id="screenshots-video-fr">
+        <strong>Captures d'Écran et Enregistrements Vidéo:</strong> Vous ne pouvez pas prendre de captures d'écran ni enregistrer des vidéos de l'Application sans autorisation préalable de l'administration.
+    </p>
+    <p id="screenshots-video-en" style="display: none;">
+        <strong>Screenshots and Video Recordings:</strong> You are not allowed to take screenshots or record videos of the application without prior authorization from the administration.
+    </p>
+
+    <p id="data-privacy-fr">
+        <strong>Confidentialité des Données:</strong> Vous vous engagez à maintenir la confidentialité des informations personnelles et du contenu de l'Application. Vous ne pouvez pas partager le contenu de quelque manière que ce soit.
+    </p>
+    <p id="data-privacy-en" style="display: none;">
+        <strong>Data Privacy:</strong> You commit to maintaining the confidentiality of personal information and the content of the application. You are not allowed to share the content in any way.
+    </p>
+
+    <p id="whatsapp-sharing-fr">
+        <strong>Partage d'Audios sur WhatsApp:</strong> Vous pouvez partager des audios de l'Application sur WhatsApp, mais veuillez noter que les informations confidentielles des étudiants sont protégées par la loi et la confidentialité doit être respectée en tout temps.
+    </p>
+    <p id="whatsapp-sharing-en" style="display: none;">
+        <strong>Sharing Audios on WhatsApp:</strong> You can share audios from the application on WhatsApp, but please note that confidential information of students is protected by law, and confidentiality must be respected at all times.
+    </p>
+
+    <p id="warning-fr">
+        <strong>Avertissement:</strong> L'application 9ismi.ma se réserve le droit de mettre fin à l'accès à l'Application en cas de non-respect de ces conditions d'utilisation.
+    </p>
+    <p id="warning-en" style="display: none;">
+        <strong>Warning:</strong> The 9ismi.ma application reserves the right to terminate access to the application in case of non-compliance with these terms of use.
+    </p>
+
+
+    <script>
+        function toggleLanguage() {
+            var titleFr = document.getElementById('title-fr');
+            var titleEn = document.getElementById('title-en');
+            var contentFr = document.getElementById('content-fr');
+            var contentEn = document.getElementById('content-en');
+            var uniqueDeviceFr = document.getElementById('unique-device-fr');
+            var uniqueDeviceEn = document.getElementById('unique-device-en');
+            var screenshotsVideoFr = document.getElementById('screenshots-video-fr');
+            var screenshotsVideoEn = document.getElementById('screenshots-video-en');
+            var dataPrivacyFr = document.getElementById('data-privacy-fr');
+            var dataPrivacyEn = document.getElementById('data-privacy-en');
+            var whatsappSharingFr = document.getElementById('whatsapp-sharing-fr');
+            var whatsappSharingEn = document.getElementById('whatsapp-sharing-en');
+            var warningFr = document.getElementById('warning-fr');
+            var warningEn = document.getElementById('warning-en');
+
+            if (titleFr.style.display === 'block' || titleFr.style.display === '') {
+                titleFr.style.display = 'none';
+                contentFr.style.display = 'none';
+                uniqueDeviceFr.style.display = 'none';
+                screenshotsVideoFr.style.display = 'none';
+                dataPrivacyFr.style.display = 'none';
+                whatsappSharingFr.style.display = 'none';
+                warningFr.style.display = 'none';
+
+                titleEn.style.display = 'block';
+                contentEn.style.display = 'block';
+                uniqueDeviceEn.style.display = 'block';
+                screenshotsVideoEn.style.display = 'block';
+                dataPrivacyEn.style.display = 'block';
+                whatsappSharingEn.style.display = 'block';
+                warningEn.style.display = 'block';
+            } else {
+                titleFr.style.display = 'block';
+                contentFr.style.display = 'block';
+                uniqueDeviceFr.style.display = 'block';
+                screenshotsVideoFr.style.display = 'block';
+                dataPrivacyFr.style.display = 'block';
+                whatsappSharingFr.style.display = 'block';
+                warningFr.style.display = 'block';
+
+                titleEn.style.display = 'none';
+                contentEn.style.display = 'none';
+                uniqueDeviceEn.style.display = 'none';
+                screenshotsVideoEn.style.display = 'none';
+                dataPrivacyEn.style.display = 'none';
+                whatsappSharingEn.style.display = 'none';
+                warningEn.style.display = 'none';
+            }
+        }
+    </script>
 
 </body>
 </html>
