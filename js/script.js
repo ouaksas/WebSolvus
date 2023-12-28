@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "title": "2.4 Angular le DataBinding",
             "description": "Dans cette vidéo, nous abordons une différence majeure pour les développeurs qui ont installé la dernière version d'Angular. Vous avez peut-être remarqué l'absence du fichier app.module.ts, une modification introduite à partir d'Angular 9. Ne vous inquiétez pas, nous avons la solution ! Regardez la vidéo pour comprendre cette transition, et découvrez comment adapter votre structure de projet. Nous allons également partager la solution détaillée dans un document PDF téléchargeable, pour que vous puissiez facilement suivre les étapes. Restez à jour avec les dernières évolutions d'Angular et optimisez votre workflow de développement.",
             "path_video": "https://drive.google.com/uc?export=download&id=1uoJ53a8xz-hhW6s5LCIOveohsYZcogIS",
-            "path_pdf": ""
+            "path_pdf": "pdf/app_module_issues.pdf"
         },
         {
             "title": "2.5 Angular Interpolation",
