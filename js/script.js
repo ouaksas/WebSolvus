@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 
         {
             "title": "4.2 Correction Workshop 3",
-            "description": "Correction Workshop 3 , pour cette video est sur google drive voici le lien :               https://drive.google.com/uc?export=download&id=1UPiv7RvRx6xmthaB-RLc80Gv0JnRmkjS",
+            "description": "Correction Workshop 3 , pour cette video est sur google drive voici le lien :https://drive.google.com/uc?export=download&id=1UPiv7RvRx6xmthaB-RLc80Gv0JnRmkjS",
             "path_video": "https://drive.google.com/uc?export=download&id=1UPiv7RvRx6xmthaB-RLc80Gv0JnRmkjS",
             "path_pdf": ""
         }, 
@@ -155,16 +155,23 @@ document.addEventListener('DOMContentLoaded', function () {
         const videoDescription = document.getElementById('videoDescription');
         const toggleDescriptionBtn = document.getElementById('toggleDescriptionBtn');
         const descriptionText = playlist[currentVideoIndex].description;
+    
+        // Regular expression to match URLs
+        const urlRegex = /(https?:\/\/[^\s]+)/g;
+    
+        // Replace URLs with clickable links
+        const formattedDescription = descriptionText.replace(urlRegex, '<a href="$1" target="_blank">$1</a>');
+    
         if (descriptionExpanded) {
-            videoDescription.innerHTML = descriptionText;
+            videoDescription.innerHTML = formattedDescription;
             toggleDescriptionBtn.textContent = 'Show less';
         } else {
-            const truncatedDescription = descriptionText.substring(0, 150) + '...';
+            const truncatedDescription = formattedDescription.substring(0, 150) + '...';
             videoDescription.innerHTML = truncatedDescription;
             toggleDescriptionBtn.textContent = 'Show more';
         }
     }
-
+    
     function toggleDescription() {
         descriptionExpanded = !descriptionExpanded;
         updateDescription();

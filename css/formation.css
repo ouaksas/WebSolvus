@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light Blue */
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #007bff; /* Blue border */
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  section {
+    max-width: 100%;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the minimum and maximum width as needed */
+    grid-gap: 30px; /* Adjust the gap between articles to make it more clear */
+  }
+  
+  article {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  
+  footer {
+    background-color: #007bff; /* Dark Blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+  }
+  
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+  
+  /* Add this style for clickable titles */
+  h2 a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  /* Change link color on hover */
+  h2 a:hover {
+    text-decoration: underline;
+  }
+  
+  .formation-image {
+    max-width: 50%; /* Set the maximum width to 100% */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 15px;
+  }
+  
+  /* Adjustments for small screens */
+  @media (max-width: 600px) {
+    section {
+      padding: 0.5em;
+    }
+  
+    article {
+      margin-bottom: 1em;
+    }
+  }
+  
