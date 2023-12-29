@@ -150,6 +150,10 @@ document.addEventListener('DOMContentLoaded', function () {
   
     let currentVideoIndex = 0;
     let descriptionExpanded = false;
+    const storedIndex = localStorage.getItem('currentVideoIndex');
+    if (storedIndex !== null) {
+        currentVideoIndex = parseInt(storedIndex, 10);
+    }
     function saveCurrentVideoIndex() {
         localStorage.setItem('currentVideoIndex', currentVideoIndex);
     }
@@ -254,10 +258,7 @@ document.addEventListener('DOMContentLoaded', function () {
             videoList.appendChild(listItem);
         });
     }
-    const storedIndex = localStorage.getItem('currentVideoIndex');
-    if (storedIndex !== null) {
-        currentVideoIndex = parseInt(storedIndex, 10);
-    }
+   
 
     
     // Initial video update
