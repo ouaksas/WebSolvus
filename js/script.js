@@ -147,9 +147,15 @@ document.addEventListener('DOMContentLoaded', function () {
             "path_pdf": ""
         }, 
     ];
-    setTimeout(function () {
-        document.getElementById('newYearModal').style.display = 'block';
-    }, 2000); // Display modal after 2 seconds (adjust as needed)
+
+   const neverShowModal = localStorage.getItem('neverShowModal');
+    if (!neverShowModal) {
+        // Show the new year modal after a delay (adjust the delay as needed)
+        setTimeout(function () {
+            document.getElementById('newYearModal').style.display = 'block';
+        }, 2000); // Display modal after 2 seconds (adjust as needed)
+    }
+
     let currentVideoIndex = 0;
     let descriptionExpanded = false;
     const storedIndex = localStorage.getItem('currentVideoIndex');
@@ -300,9 +306,17 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('toggleDescriptionBtn').addEventListener('click', toggleDescription);
 
 });
+
 function closeNewYearModal() {
     document.getElementById('newYearModal').style.display = 'none';
 }
+
+function neverShowModalAgain() {
+    // Save the user's preference in local storage
+    localStorage.setItem('neverShowModal', 'true');
+    closeNewYearModal(); // Close the modal immediately
+}
+
 function togglePdfViewer() {
     var pdfViewer = document.getElementById('pdfViewer');
     var videoContainer = document.getElementById('videoContainer');

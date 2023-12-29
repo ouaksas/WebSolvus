@@ -44,15 +44,31 @@
                 <ul id="videoList" class="video-list">
                 </ul>
             </div>
+
             <div class="video-container" id="videoContainer">
                 <div class="overlay"></div>
+
+                <!-- Modal container -->
                 <div id="newYearModal" class="modal">
                     <div class="modal-content">
-                      <span class="close" onclick="closeNewYearModal()">&times;</span>
-                      <h1>Happy New Year!</h1>
-                      <p>Wishing you a year filled with joy, success, and exciting learning adventures!</p>
+                    <span class="close" onclick="closeNewYearModal()">&times;</span>
+                    <!-- WebSolvus logo in the center of the modal -->
+                    <div class="modal-logo">
+                        <img src="img/websolvus_logo.png" alt="WebSolvus Logo">
                     </div>
-                  </div>
+                    <h1>Happy New Year!</h1>
+                    <p>Wishing you a year filled with joy, success, and exciting learning adventures!</p>
+                    <button onclick="neverShowModalAgain()">Never show the modal again, thanks</button>
+                    <!-- Bubbles -->
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <!-- Add more bubbles as needed -->
+                    </div>
+                </div>
+  
+
+
                 <video controls id="videoPlayer">
                     Your browser does not support the video tag.
                 </video>
