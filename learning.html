@@ -35,16 +35,24 @@
 
                 </a>
             </div>
+          
         </header>
         
         <div class="main-container">
+            
             <div class="navigation-container">
                 <ul id="videoList" class="video-list">
                 </ul>
             </div>
             <div class="video-container" id="videoContainer">
                 <div class="overlay"></div>
-    
+                <div id="newYearModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close" onclick="closeNewYearModal()">&times;</span>
+                      <h1>Happy New Year!</h1>
+                      <p>Wishing you a year filled with joy, success, and exciting learning adventures!</p>
+                    </div>
+                  </div>
                 <video controls id="videoPlayer">
                     Your browser does not support the video tag.
                 </video>
