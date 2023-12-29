@@ -150,7 +150,10 @@ document.addEventListener('DOMContentLoaded', function () {
   
     let currentVideoIndex = 0;
     let descriptionExpanded = false;
-
+    function saveCurrentVideoIndex() {
+        localStorage.setItem('currentVideoIndex', currentVideoIndex);
+    }
+    
     function updateDescription() {
         const videoDescription = document.getElementById('videoDescription');
         const toggleDescriptionBtn = document.getElementById('toggleDescriptionBtn');
@@ -198,12 +201,16 @@ document.addEventListener('DOMContentLoaded', function () {
         currentVideoIndex = (currentVideoIndex + 1) % playlist.length;
         updateVideo();
         updatePdf();
+        saveCurrentVideoIndex();
+
     }
 
     function prevVideo() {
         currentVideoIndex = (currentVideoIndex - 1 + playlist.length) % playlist.length;
         updateVideo();
         updatePdf();
+        saveCurrentVideoIndex();
+
     }
     function populateVideoList() {
         const videoList = document.getElementById('videoList');
@@ -247,7 +254,11 @@ document.addEventListener('DOMContentLoaded', function () {
             videoList.appendChild(listItem);
         });
     }
-    
+    const storedIndex = localStorage.getItem('currentVideoIndex');
+    if (storedIndex !== null) {
+        currentVideoIndex = parseInt(storedIndex, 10);
+    }
+
     
     // Initial video update
     updateVideo();
