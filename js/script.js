@@ -187,6 +187,15 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateVideo() {
         const videoPlayer = document.getElementById('videoPlayer');
         videoPlayer.src = playlist[currentVideoIndex].path_video;
+        const downloadBtn = document.getElementById('downloadBtn');
+        
+        if (playlist[currentVideoIndex].path_video) {
+            // Enable the download button if a video path is available
+            downloadBtn.disabled = false;
+        } else {
+            // Disable the download button if no video path is available
+            downloadBtn.disabled = true;
+        }
 
         const videoTitle = document.getElementById('videoTitle');
         const pageTitle = document.getElementById('pageTitle');
@@ -216,6 +225,19 @@ document.addEventListener('DOMContentLoaded', function () {
         saveCurrentVideoIndex();
 
     }
+    function downloadVideo() {
+        const videoUrl = playlist[currentVideoIndex].path_video;
+        const videoTitle = playlist[currentVideoIndex].title;
+    
+        // Create an anchor element to trigger the download
+        const downloadLink = document.createElement('a');
+        downloadLink.href = videoUrl;
+        downloadLink.download = `${videoTitle}.mp4`;
+        
+        // Trigger a click on the anchor element
+        downloadLink.click();
+    }
+    
     function populateVideoList() {
         const videoList = document.getElementById('videoList');
     
