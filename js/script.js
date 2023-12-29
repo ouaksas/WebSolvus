@@ -95,12 +95,12 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             "title": "4.1 Template Driven Form",
             "description": "Template Driven Form",
-            "path_video": "https://drive.google.com/uc?export=download&id=1qg5oWBC9DBepM4DltfcLe5d5XPcbzX3l",
+            "path_video": "https://drive.google.com/uc?export=download&id=1hMpSjGlT9lTQs9RbuLZcPlpqQso5f-_q",
             "path_pdf": ""
         }, 
         {
             "title": "4.2 Correction Workshop 3",
-            "description": "Correction Workshop 3",
+            "description": "Correction Workshop 3 , pour cette video est sur google drive voici le lien :               https://drive.google.com/uc?export=download&id=1UPiv7RvRx6xmthaB-RLc80Gv0JnRmkjS",
             "path_video": "https://drive.google.com/uc?export=download&id=1UPiv7RvRx6xmthaB-RLc80Gv0JnRmkjS",
             "path_pdf": ""
         }, 
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         {
             "title": "6.1 Correction Workshop numéro 5",
-            "description": "Correction Workshop numéro 5",
+            "description": "Correction Workshop numéro 5 , voici le lien de la video :     https://drive.google.com/file/d/1brzlzXPi4EtyOIUvhR4Uei-xkgSD60vn/view ",
             "path_video": "https://drive.google.com/file/d/1brzlzXPi4EtyOIUvhR4Uei-xkgSD60vn/view?usp=sharing",
             "path_pdf": ""
         }, 
