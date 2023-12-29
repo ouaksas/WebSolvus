@@ -276,14 +276,14 @@ button:hover {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: #9fdcf0; /* Bubble color */
+    background-color: #f30000; /* Bubble color */
     border-radius: 50%;
     animation: bubbleAnimation 4s infinite; /* Adjust the duration and other properties as needed */
   }
   
   /* Position bubbles randomly */
   .bubble:nth-child(1) { top: 20%; left: 15%; }
-  .bubble:nth-child(2) { top: 50%; left: 40%; }
+  .bubble:nth-child(2) { top: 50%; right: 40%; }
   .bubble:nth-child(3) { top: 80%; left: 70%; }
   /* Add more bubbles as needed */
   
