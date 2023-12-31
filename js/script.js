@@ -237,14 +237,29 @@ document.addEventListener('DOMContentLoaded', function () {
         const videoUrl = playlist[currentVideoIndex].path_video;
         const videoTitle = playlist[currentVideoIndex].title;
     
-        // Create an anchor element to trigger the download
-        const downloadLink = document.createElement('a');
-        downloadLink.href = videoUrl;
-        downloadLink.download = `${videoTitle}.mp4`;
-        
-        // Trigger a click on the anchor element
-        downloadLink.click();
+        // Fetch the video content as a Blob
+        fetch(videoUrl)
+            .then(response => response.blob())
+            .then(blob => {
+                // Create a Blob object from the fetched data
+                const blobUrl = URL.createObjectURL(blob);
+    
+                // Create an anchor element to trigger the download
+                const downloadLink = document.createElement('a');
+                downloadLink.href = blobUrl;
+                downloadLink.download = `${videoTitle}.mp4`;
+    
+                // Trigger a click on the anchor element
+                downloadLink.click();
+    
+                // Revoke the Blob URL to free up resources
+                URL.revokeObjectURL(blobUrl);
+            })
+            .catch(error => {
+                console.error('Error fetching video:', error.message);
+            });
     }
+    
     
     function populateVideoList() {
         const videoList = document.getElementById('videoList');
@@ -300,6 +315,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listeners for next and previous buttons
     document.getElementById('nextBtn').addEventListener('click', nextVideo);
     document.getElementById('prevBtn').addEventListener('click', prevVideo);
+    document.getElementById('downloadBtn').addEventListener('click', downloadVideo);
 
     // Initially hide the PDF viewer
     document.getElementById('pdfViewer').style.display = 'none';
