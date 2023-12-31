@@ -315,7 +315,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listeners for next and previous buttons
     document.getElementById('nextBtn').addEventListener('click', nextVideo);
     document.getElementById('prevBtn').addEventListener('click', prevVideo);
-    document.getElementById('downloadBtn').addEventListener('click', downloadVideo);
 
     // Initially hide the PDF viewer
     document.getElementById('pdfViewer').style.display = 'none';
