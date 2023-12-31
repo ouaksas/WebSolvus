@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 
 
         {
-            "title": "7.3# REST Api & HttpClient: POST",
+            "title": "7.3 REST Api & HttpClient: POST",
             "description": "REST Api & HttpClient : POST",
             "path_video": "https://drive.google.com/uc?export=download&id=1vLhR0BWZZ2F_2xzYAeMNHXTQ6aFrAZx_",
             "path_pdf": ""
@@ -315,6 +315,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listeners for next and previous buttons
     document.getElementById('nextBtn').addEventListener('click', nextVideo);
     document.getElementById('prevBtn').addEventListener('click', prevVideo);
+    document.getElementById('downloadBtn').addEventListener('click', downloadVideo);
 
     // Initially hide the PDF viewer
     document.getElementById('pdfViewer').style.display = 'none';
