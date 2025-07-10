@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppression de Compte - WatchVid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            font-size: 14px;
+            color: #666;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        button {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e60000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Demande de Suppression de Compte</h1>
+        <p>Pour demander la suppression de votre compte WatchVid, veuillez entrer l’identifiant de votre compte ci-dessous.</p>
+        <form action="https://votre-serveur.com/delete-account" method="POST">
+            <input type="text" name="account_id" placeholder="Entrez votre ID de compte" required>
+            <br>
+            <button type="submit">Supprimer mon compte</button>
+        </form>
+        <p style="margin-top: 20px; font-size: 12px;">
+            En soumettant ce formulaire, vous acceptez que votre compte et toutes les données associées soient définitivement supprimés.
+        </p>
+    </div>
+</body>
+</html>
